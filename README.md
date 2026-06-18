@@ -13,4 +13,3 @@ Framework de automatización de pruebas construido con:
 pip install -r requirements.txt
 playwright install
 pytest
-
