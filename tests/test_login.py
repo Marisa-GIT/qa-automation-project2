@@ -44,5 +44,6 @@ def test_login(page, username, password, expected):
         assert page.url == "https://practicetestautomation.com/logged-in-successfully/"
     else:
         error = login_page.get_error_message()
-        #assert "your username is invalid!" in error.lower() or "your password is invalid!" in error.lower()
-        assert False
+        assert "your username is invalid!" in error.lower() or "your password is invalid!" in error.lower()
+
+# assert False para simular un fallo en el test y verificar que se capture correctamente el error.
